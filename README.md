@@ -22,19 +22,19 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 Install dependencies `npm install`
 
 * ### 🏡 Environment Vaiables
-    Refer `.env.local.example` and rename after adding your own variables.
+    Refer [`.env.local.example`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/env.local.example) and rename after adding your own variables.
 
 * ### 🔓 Private and Login Pages
-    Refer `pages/dashboard.js` for private page (Authentication Required). And `pages/login.js` for login page.
+    Refer [`pages/dashboard.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/pages/dashboard.js) for private page (Authentication Required). And [`pages/login.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/pages/login.js) for login page.
 
 * ### 🔑 Setting Custom Auth Providers
-    Refer [`firebaseAuth.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/components/elements/FirebaseAuth.js) file to add more Providers. 
+    Refer [`components/elements/firebaseAuth.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/components/elements/FirebaseAuth.js) file to add more Providers. 
 
 * ### 📄 Adding users into firestore collection
-    Refer - [`firebaseAuth.js` callbacks](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/components/elements/FirebaseAuth.js#L32)
+    Refer - [`components/elements/firebaseAuth.js` callbacks](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/components/elements/FirebaseAuth.js#L32)
 
 * ### 💻 SSR / SSG using Firestore Data
-    Use [Admin SDK's Firestore Functions](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/utils/firebase/firestore/fsAdminFunctions.js) for server operations. 
+    Use Admin SDK's Firestore Functions: [utils/firebase/firestore/fsAdminFunctions.js](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/utils/firebase/firestore/fsAdminFunctions.js) for server operations. 
 
     **Note:** Do not use these for Client Side.
 
