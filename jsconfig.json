@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@/elements/*": ["components/elements/*"],
+        "@/firebase/*": ["utils/firebase/*"],
+        "@/firebase-client": ["utils/firebase/firebaseClient.js"], 
+        "@/firebase-admin": ["utils/firebase/firebaseAdmin.js"], 
+        "@/FS-client-functions": ["utils/firebase/firestore/functions.js"],
+        "@/FS-admin-functions" : ["utils/firebase/firestore/fsAdminFunctions.js"],
+        "@/FS-client-refs" : ["utils/firebase/firestore/references.js"],
+        "@/FS-admin-refs" : ["utils/firebase/firestore/adminReferences.js"],
+        "@/auth": ["utils/firebase/auth/initAuth.js"],
+        "@/messaging/*": ["utils/firebase/messaging/*"]
+      }
+    }
+  }
