@@ -1,7 +1,7 @@
 # Next.js + Firebase Setup
 Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Firestore + 🔔 Messaging.
 
-## Demo: [next-firebase-starter.vercel.app](https://next-firebase-starter.vercel.app)
+> ## Demo: [next-firebase-starter.vercel.app](https://next-firebase-starter.vercel.app)
 
 ## What's Provided?
 * Firebase Authentication Setup
