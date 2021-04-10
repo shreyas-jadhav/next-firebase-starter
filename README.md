@@ -1,32 +1,41 @@
-# [Next.js](https://nextjs.org/) + [Firebase](https://firebase.google.com/docs) Setup 🔥
+# Next.js + Firebase Setup
 Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Firestore + 🔔 Messaging.
 
-Demo: [https://next-firebase-starter.vercel.app/](https://next-firebase-starter.vercel.app/)
+## What's Provided?
+* Firebase Authentification Setup
+* Automatically set new users in `users` collection 
+* Firebase Client and Admin SDK Init
+* Clean Project Structure (Functions, references for Firestore)
+* Server Side Rendering via Firestore Data
+* Enable Firebase Cloud Messaging 
+* FCM Service Worker Setup
+
 ## ✅ Getting Started
 
-1. Edit `.env.local.example` to `.env.local` and fill in your own.
+Install dependencies `npm install`
 
-2. Customize the project accordingly. No need to intialize SDKs, or setup Firebase Auth. 
+* ### 🏡 Environment Vaiables
+    Refer `.env.local.example` and rename after adding your own variables.
 
-3. Refer `dashboard.js` for protected pages and `login.js` for Login / Register pages.
+* ### 🔓 Private and Login Pages
+    Refer `pages/dashboard.js` for private page (Authentication Required). And `pages/login.js` for login page.
 
-### 🔑 Setting Custom Auth Providers
+* ### 🔑 Setting Custom Auth Providers
+    Refer [`firebaseAuth.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/components/elements/FirebaseAuth.js) file to add more Providers. 
 
-* Refer [`firebaseAuth.js`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/components/elements/FirebaseAuth.js) file to add more Providers. 
+* ### 📄 Adding users into firestore collection
+    Refer - [`firebaseAuth.js` callbacks](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/components/elements/FirebaseAuth.js#L32)
 
-### 📄 Adding users into firestore collection
-* Refer - [`firebaseAuth.js` callbacks](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/components/elements/FirebaseAuth.js#L32)
+* ### 💻 SSR / SSG using Firestore Data
+    Use [Admin SDK's Firestore Functions](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/utils/firebase/firestore/fsAdminFunctions.js) for server operations. 
 
-### 💻 SSR / SSG using Firestore Data
-* Use [Admin SDK's Firestore Functions](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/utils/firebase/firestore/fsAdminFunctions.js) for server operations. 
+    **Note:** Do not use these for Client Side.
 
-Note: Do not use these for Client Side.
+* ### 🚚 Absolute Imports
+    Refer [jsconfig.json](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/jsconfig.json#L5) 
 
-### 🚚 Absolute Imports
-* Refer [jsconfig.json](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/jsconfig.json#L5) 
-
-### 👩‍🏭 Firebase Cloud Messaging service worker
-* Refer [firebase-messaging-sw.js](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/public/firebase-messaging-sw.js)
+* ### 👩‍🏭 Firebase Cloud Messaging service worker
+    Refer [firebase-messaging-sw.js](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/public/firebase-messaging-sw.js)
 
 
 ## Additional Docs
