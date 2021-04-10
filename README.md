@@ -12,7 +12,7 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 * Server Side Rendering via Firestore Data
 * Enable Firebase Cloud Messaging 
 * FCM Service Worker Setup
-
+* Module path aliases
 
 
 
@@ -37,7 +37,7 @@ Install dependencies `npm install`
 
     **Note:** Do not use these for Client Side.
 
-* ### 🚚 Absolute Imports
+* ### 🚚 Module Path Aliases
     Refer [jsconfig.json](https://github.com/shreyas-jadhav/next-firebase-starter/blob/29bc5278439e8fe98c932b067ffc55ca91b48677/jsconfig.json#L5) 
 
 * ### 👩‍🏭 Firebase Cloud Messaging service worker
