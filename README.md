@@ -2,7 +2,8 @@
 Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Firestore + 🔔 Messaging.
 
 ## What's Provided?
-* Firebase Authentification Setup
+* Firebase Authentication Setup
+* Private and Login Pages
 * Automatically set new users in `users` collection 
 * Firebase Client and Admin SDK Init
 * Clean Project Structure (Functions, references for Firestore)
