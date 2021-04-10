@@ -9,7 +9,7 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 * Automatically set new users in `users` collection 
 * Firebase Client and Admin SDK Init
 * Clean Project Structure (Functions, references for Firestore)
-* Server Side Rendering via Firestore Data
+* SSR / SSG via Firestore Data
 * Enable Firebase Cloud Messaging 
 * FCM Service Worker Setup
 * Module path aliases
