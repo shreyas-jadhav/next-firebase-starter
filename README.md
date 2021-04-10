@@ -1,4 +1,4 @@
-# [Next.js](https://nextjs.org/) + [Firebase](https://firebase.google.com/docs) Setup
+# [Next.js](https://nextjs.org/) + [Firebase](https://firebase.google.com/docs) Setup 🔥
 Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Firestore + 🔔 Messaging.
 ## ✅ Getting Started
 
