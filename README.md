@@ -12,6 +12,7 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 * SSR / SSG via Firestore Data
 * Enable Firebase Cloud Messaging 
 * FCM Service Worker Setup
+* Tailwind CSS
 * Module path aliases
 
 
