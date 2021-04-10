@@ -1,6 +1,8 @@
 # Next.js + Firebase Setup
 Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Firestore + 🔔 Messaging.
 
+### Demo: [Next Firebase Starter](https://next-firebase-starter.vercel.app)
+
 ## What's Provided?
 * Firebase Authentication Setup
 * Private and Login Pages
@@ -10,6 +12,9 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 * Server Side Rendering via Firestore Data
 * Enable Firebase Cloud Messaging 
 * FCM Service Worker Setup
+
+
+
 
 ## ✅ Getting Started
 
@@ -37,7 +42,6 @@ Install dependencies `npm install`
 
 * ### 👩‍🏭 Firebase Cloud Messaging service worker
     Refer [firebase-messaging-sw.js](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/public/firebase-messaging-sw.js)
-
 
 ## Additional Docs
 * `next-firebase-auth` library [documentation](https://github.com/gladly-team/next-firebase-auth) (Great Library ♥)
