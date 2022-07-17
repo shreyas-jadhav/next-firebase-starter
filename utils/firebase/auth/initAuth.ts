@@ -6,7 +6,12 @@ const initAuth = () => {
     appPageURL: "/dashboard",
     loginAPIEndpoint: "/api/login", // required
     logoutAPIEndpoint: "/api/logout", // required
-    // Required in most cases.
+    onLoginRequestError: (err) => {
+      console.error(err);
+    },
+    onLogoutRequestError: (err) => {
+      console.error(err);
+    },
     firebaseAdminInitConfig: {
       credential: {
         projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
@@ -38,7 +43,7 @@ const initAuth = () => {
       overwrite: true,
       path: "/",
       sameSite: "strict",
-      secure: process.env.COOKIE_SECURE, // set this to false in local (non-HTTPS) development
+      secure: process.env.NODE_ENV == "development" ? false : true, // set this to false in local (non-HTTPS) development
       signed: true,
     },
   });
