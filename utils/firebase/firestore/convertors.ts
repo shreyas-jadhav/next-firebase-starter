@@ -1,5 +1,6 @@
 import firestore, { Timestamp } from "firebase/firestore";
 
+/** converts javascript Date object to firebase Timestamp */
 export const timeStampToDateConvertor = <
   T
 >(): firestore.FirestoreDataConverter<T> => ({
@@ -18,6 +19,18 @@ export const timeStampToDateConvertor = <
         data[k] = (data[k] as Timestamp).toDate();
       }
     });
+    return data as T;
+  },
+});
+
+/** sets firebase id to document */
+export const idConvertor = <T>(): firestore.FirestoreDataConverter<T> => ({
+  toFirestore(modelObject) {
+    return modelObject;
+  },
+  fromFirestore(snapshot, options) {
+    const data = snapshot.data(options);
+    data.id = snapshot.id;
     return data as T;
   },
 });
@@ -42,4 +55,4 @@ export const convertorChain = <T>(
 };
 
 export const defaultConvertorChain = <T>() =>
-  convertorChain<T>([timeStampToDateConvertor]);
+  convertorChain<T>([timeStampToDateConvertor, idConvertor]);
