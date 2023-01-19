@@ -20,7 +20,7 @@ Full Starter Code for Next.js and Firebase 👤 `next-firebase-auth` + 🗃 Fire
 
 Install dependencies `npm install`
 
-* ### 🏡 Environment Vaiables
+* ### 🏡 Environment Variables
     Refer [`.env.local.example`](https://github.com/shreyas-jadhav/next-firebase-starter/blob/main/env.local.example) and rename after adding your own variables.
 
 * ### 🔓 Private and Login Pages
